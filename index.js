@@ -5,8 +5,8 @@ const handlebars = require("handlebars");
 const transporter = nodemailer.createTransport({
   service: "gmail",
   auth: {
-    user: "chealseaolivia17@gmail.com",
-    pass: "lboo rrkk tzzg mcuv",
+    user: process.env.email,
+    pass: process.env.password,
   },
 });
 
